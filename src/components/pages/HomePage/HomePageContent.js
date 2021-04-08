@@ -9,7 +9,7 @@ const HomePageReact = () => {
   const { setBridgeData } = useContext(BridgesContext);
 
   useEffect(() => {
-    getDSData('https://bridges-b-api.herokuapp.com/bridges').then(data => {
+    getDSData('https://bridges-to-prosperity.herokuapp.com').then(data => {
       setBridgeData(data);
     });
   }, [setBridgeData]);
